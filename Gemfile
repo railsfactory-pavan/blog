@@ -53,4 +53,17 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# make errors better looking
 gem 'better_errors', '~> 2.5', '>= 2.5.1'
+
+# bulma CSS
+gem 'bulma', '~> 0.1.0'
+
+# simple form
+gem 'simple_form', '~> 5.0', '>= 5.0.2'
+
+# guard is a command line tool to easily handle events on file system modifications
+gem 'guard', '~> 2.16', '>= 2.16.1'
+
+# Guard::LiveReload automatically reloads your browser when 'view' files are modified
+gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
