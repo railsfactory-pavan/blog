@@ -40,6 +40,12 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  
+  # guard is a command line tool to easily handle events on file system modifications
+  gem 'guard', '~> 2.16', '>= 2.16.1'
+  
+  # Guard::LiveReload automatically reloads your browser when 'view' files are modified
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 group :test do
@@ -61,9 +67,3 @@ gem 'bulma', '~> 0.1.0'
 
 # simple form
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
-
-# guard is a command line tool to easily handle events on file system modifications
-gem 'guard', '~> 2.16', '>= 2.16.1'
-
-# Guard::LiveReload automatically reloads your browser when 'view' files are modified
-gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
